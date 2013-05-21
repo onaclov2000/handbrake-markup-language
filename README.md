@@ -10,15 +10,15 @@ An HML file is a file (of JSON Object format) containing information about a par
 
      T.V. Series
     {
-       Title Handbrake Finds : "Some name",
-       Disc Title : "Name of Series",
+       HandbrakeTitle : "Some name",
+       DiscTitle : "Name of Series",
        Type       : Series,
        Season     : "NN"
        Titles     : 
                     {
                      X : { 
-                           Displayed Title : "Name_Of_Episode", 
-                           Episode Number : "NN"
+                           DisplayedTitle : "Name_Of_Episode", 
+                           EpisodeNumber : "NN"
                           }
                     }
     }
@@ -26,12 +26,12 @@ An HML file is a file (of JSON Object format) containing information about a par
 
      Movies
     {
-        Title Handbrake Finds : "Some name",
-        Disc Title : "Name of Movie"
+        HandbrakeTitle : "Some name",
+        DiscTitle : "Name of Movie"
         Type       : Movie
         Titles     : {
                        X : {
-                             Displayed Title : "Name of Output",
+                             DisplayedTitle : "Name of Output",
                            }
                     }
      }
