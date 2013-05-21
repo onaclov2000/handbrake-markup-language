@@ -45,3 +45,23 @@ So the idea is that we can take a disk title that handbrake finds, do a lookup i
 This means that DVD's that have 99 titles will know which titles are what (if they've been discovered before).
 
 This *should* work well using Handbrake CLI.
+
+Example:
+========================
+Incredible Edibles DVD Collection Good Eats with Alton Brown.
+
+    {
+       HandbrakeTitle : "Super Sweets 3",
+       DiscTitle      : "Super Sweets 3",
+       Type           : "Series",
+       Season         : "Good Eats Incredible Edibles with Alton Brown",
+       Titles         : {
+                          2 : {DisplayedTitle : "Crust Never Sleeps",    EpisodeNumber : "01"}
+                          3 : {DisplayedTitle : "A Cake on Every Plate", EpisodeNumber : "02"}
+                          4 : {DisplayedTitle : "The Icing Man Cometh",  EpisodeNumber : "03"}
+                        }
+     }
+    
+
+
+While using mongodb a db.handbrake.find({HandbrakeTitle : "Super Sweets 3"}) will return all of the Super Sweets Titles.
